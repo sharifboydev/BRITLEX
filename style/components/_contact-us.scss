@@ -1,0 +1,56 @@
+.contact-elements {
+  display: flex;
+  align-items: center;
+  gap: 111px;
+  margin-top: 257px;
+
+  .contact-us {
+    max-width: 477px;
+    width: 100%;
+  }
+
+  .contact-box {
+    display: flex;
+    flex-direction: column;
+
+    &_title {
+      @include aboutUs;
+    }
+
+    &_text {
+      max-width: 661px;
+      width: 100%;
+      @include pricing;
+      margin-block: 37px 50px;
+    }
+
+    form {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .main-input {
+      border-radius: 10px;
+      padding: 26px 200px 33px 30px;
+      font-size: 14px;
+      border: 2px solid $titleColor;
+    }
+
+    .main-btn {
+      padding: 22px 80px;
+      border-radius: 10px;
+      color: #fff;
+      font-size: 20px;
+      line-height: 30px;
+      border: 2px solid $textColor;
+      background-color: $textColor;
+      transition: $transition;
+    }
+
+    .main-btn:hover {
+      background-color: #fff;
+      color: $textColor;
+    }
+  }
+}

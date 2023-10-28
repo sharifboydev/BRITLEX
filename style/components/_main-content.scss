@@ -1,0 +1,20 @@
+.main-content {
+  @include flexCenter;
+  margin-block: 103px 120px;
+
+  @include mediaMobileFirst(876) {
+    margin-block: 50px 50px;
+  }
+
+  &__title {
+    color: #000;
+    font-size: 48px;
+    line-height: 80px;
+    font-family: $PoppinsSemiBold;
+
+    @include mediaMobileFirst(876) {
+      font-size: 30px;
+      line-height: 80px;
+    }
+  }
+}

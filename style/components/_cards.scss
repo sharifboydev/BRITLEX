@@ -1,0 +1,169 @@
+.main-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 18px;
+  margin-bottom: 252px;
+
+  &__skills {
+    padding: 0px 23px 92px;
+
+    &-title {
+      @include cardTitle;
+    }
+
+    &-text {
+      margin-bottom: 35px;
+      @include cardText;
+    }
+
+    &-btn {
+      @include cardBtn;
+      transition: $transition;
+    }
+
+    &-btn:hover {
+      color: $textColor;
+      background-color: #fff;
+      border: 2px solid $textColor;
+      cursor: pointer;
+    }
+  }
+
+  &__item {
+    grid-row: span 4;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &-img {
+      padding: 35px 23px 0;
+    }
+  }
+
+  &__intro {
+    grid-row: span 1;
+    grid-column: span 1;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+
+    &-img {
+      display: block;
+      margin-left: auto;
+      padding: 0 19px 0 0;
+    }
+  }
+
+  &__wrapper {
+    grid-row: span 1;
+    grid-column: span 2;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    padding: 0 41px 44px;
+
+    &-title {
+      @include cardTitle;
+    }
+
+    &-text {
+      @include cardText;
+      margin-bottom: 35px;
+    }
+
+    &-btn {
+      @include cardBtn;
+      transition: $transition;
+    }
+
+    &-btn:hover {
+      color: $textColor;
+      background-color: #fff;
+      border: 2px solid $textColor;
+      cursor: pointer;
+    }
+  }
+
+  &__info {
+    grid-row: span 1;
+    grid-column: span 1;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &-img {
+      padding: 10px 63px 1px 0;
+    }
+  }
+
+  &__content {
+    padding: 0 41px 44px;
+
+    &-title {
+      @include cardTitle;
+    }
+
+    &-text {
+      @include cardText;
+      margin-bottom: 35px;
+    }
+
+    &-btn {
+      @include cardBtn;
+      transition: $transition;
+    }
+
+    &-btn:hover {
+      color: $textColor;
+      background-color: #fff;
+      border: 2px solid $textColor;
+      cursor: pointer;
+    }
+  }
+
+  &__box {
+    grid-row: span 1;
+    grid-column: span 2;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+    &-img {
+      max-width: 382px;
+      width: 100%;
+      padding: 44px 25px 44px 0;
+    }
+
+    &-title {
+      @include cardTitle;
+    }
+
+    &-text {
+      max-width: 328px;
+      width: 100%;
+      margin-bottom: 30px;
+      @include cardText;
+    }
+
+    &-btn {
+      @include cardBtn;
+      transition: $transition;
+    }
+
+    &-btn:hover {
+      color: $textColor;
+      background-color: #fff;
+      border: 2px solid $textColor;
+      cursor: pointer;
+    }
+
+    &-item {
+      padding: 43px 0 44px 68px;
+    }
+  }
+}

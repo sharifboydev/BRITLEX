@@ -1,0 +1,104 @@
+.foreign {
+  @include flexBetween;
+  margin-top: 50px;
+
+  @include mediaMobileFirst(876) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  &-info {
+    max-width: 526px;
+    width: 100%;
+
+    @include mediaMobileFirst(876) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__title {
+      max-width: 386px;
+      width: 100%;
+      @include title;
+
+      @include mediaMobileFirst(876) {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        font-size: 48px;
+        line-height: 64px;
+      }
+
+      @include mediaMobileFirst(521) {
+        display: flex;
+        font-size: 33px;
+        line-height: 45px;
+      }
+    }
+
+    &__text {
+      font-size: 24px;
+      line-height: 36px;
+      color: $titleColor;
+      margin-block: 40px 61px;
+      font-family: $PoppinsRegular;
+
+      @include mediaMobileFirst(876) {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        font-size: 20px;
+        line-height: 30px;
+        margin-block: 30px 40px;
+      }
+
+      @include mediaMobileFirst(521) {
+        font-size: 15px;
+        line-height: 24px;
+        text-align: center;
+      }
+    }
+  }
+
+  .foreign-btn {
+    @include foreignBtn;
+    transition: $transition;
+    border: 3px solid $textColor;
+
+    @include mediaMobileFirst(1212) {
+      padding: 22px 78px;
+    }
+
+    @include mediaMobileFirst(992) {
+      padding: 10px 45px;
+      font-size: 20px;
+      line-height: 50px;
+    }
+
+    @include mediaMobileFirst(521) {
+      padding: 6px 38px;
+    }
+  }
+
+  .foreign-btn:hover {
+    color: $textColor;
+    background-color: white;
+    border: 3px solid $textColor;
+  }
+
+  &-img {
+    max-width: 661px;
+    width: 100%;
+
+    @include mediaMobileFirst(1212) {
+      max-width: 460px;
+      width: 100%;
+    }
+
+    @include mediaMobileFirst(767) {
+      max-width: 352px;
+      width: 100%;
+    }
+  }
+}

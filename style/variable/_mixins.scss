@@ -1,0 +1,109 @@
+@mixin title {
+  font-size: 64px;
+  line-height: 80px;
+  color: $textColor;
+  font-family: $PoppinsSemiBold;
+}
+
+@mixin link {
+  color: #000;
+  font-size: 36px;
+  line-height: 54px;
+  font-family: $PoppinsMedium;
+}
+
+@mixin info {
+  font-size: 20px;
+  line-height: 30px;
+  color: $textColor;
+  font-family: $PoppinsMedium;
+}
+
+@mixin text {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: $PoppinsRegular;
+}
+
+@mixin btn {
+  color: #000;
+  font-size: 24px;
+  line-height: 36px;
+  padding: 17px 57px;
+  background-color: #fff;
+  border-radius: $borderRadius;
+  border: 2px solid $textColor;
+}
+
+@mixin flexBetween {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin foreignBtn {
+  color: #fff;
+  font-size: 36px;
+  line-height: 54px;
+  padding: 32px 118px;
+  border-radius: 15px;
+  background-color: $textColor;
+  font-family: $PoppinsRegular;
+}
+
+@mixin cardTitle {
+  font-size: 30px;
+  line-height: 80px;
+  color: $textColor;
+  font-family: $PoppinsSemiBold;
+}
+
+@mixin cardText {
+  font-size: 16px;
+  line-height: 24px;
+  color: $titleColor;
+  font-family: $PoppinsRegular;
+}
+
+@mixin cardBtn {
+  color: #fff;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 17px 63px;
+  font-family: $PoppinsMedium;
+  background-color: $textColor;
+  border-radius: $borderRadius;
+}
+
+@mixin aboutUs {
+  font-size: 48px;
+  line-height: 80px;
+  color: #000;
+  font-family: $PoppinsSemiBold;
+}
+
+@mixin intro {
+  color: $titleColor;
+  margin-bottom: 33px;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Poppins-Regular";
+}
+
+@mixin pricing {
+  font-size: 20px;
+  line-height: 30px;
+  color: $titleColor;
+  font-family: $PoppinsRegular;
+}

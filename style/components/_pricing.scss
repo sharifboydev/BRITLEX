@@ -1,0 +1,71 @@
+.pricing-box {
+  @include flexCenter;
+  margin-bottom: 57px;
+
+  &__title {
+    @include aboutUs;
+  }
+}
+
+.price-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+
+  &_item {
+    &-img {
+      width: 100%;
+      @include flexCenter;
+      display: flex;
+      justify-content: space-between;
+      height: 310px;
+    }
+  }
+
+  .item-info_title {
+    font-size: 30px;
+    line-height: 48px;
+    color: $textColor;
+    font-family: $PoppinsSemiBold;
+  }
+
+  .item-info_text {
+    margin-block: 29px 35px;
+    font-size: 20px;
+    line-height: 30px;
+    color: $titleColor;
+    font-family: $PoppinsRegular;
+  }
+
+  .item-info_element {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    max-width: 240px;
+    width: 100%;
+    padding-inline: 18px 24px;
+    background-color: #eee;
+
+    span {
+      font-size: 30px;
+      line-height: 45px;
+      color: $textColor;
+      font-family: $PoppinsRegular;
+    }
+
+    p {
+      font-family: $PoppinsRegular;
+      font-size: 18px;
+      line-height: 27px;
+    }
+  }
+
+  .second-title {
+    margin-block: 36px 59px;
+  }
+
+  .third-title {
+    max-width: 400px;
+    margin-block: 33px 28px;
+  }
+}

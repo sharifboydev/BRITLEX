@@ -1,0 +1,16 @@
+.footer-info {
+  border-top: 1px solid #c4c4c4;
+}
+
+.page-footer {
+  @include flexBetween;
+  margin-block: 31px 64px;
+}
+.footer-element {
+  &_text {
+    font-size: 24px;
+    line-height: 36px;
+    color: $titleColor;
+    font-family: $PoppinsRegular;
+  }
+}

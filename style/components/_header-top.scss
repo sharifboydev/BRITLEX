@@ -1,0 +1,66 @@
+.header-top {
+  margin-top: 50px;
+  @include flexBetween;
+
+  .btn {
+    @include btn;
+    transition: $transition;
+
+    @include mediaMobileFirst(767) {
+      display: none;
+    }
+  }
+
+  .btn:hover {
+    color: #fff;
+    cursor: pointer;
+    background-color: $textColor;
+  }
+}
+
+.header-content {
+  @include flexCenter;
+
+  &__info {
+    gap: 20px;
+    @include flexBetween;
+
+    &-item {
+      &__link {
+        @include info;
+        transition: $transition;
+        border-bottom: 2px solid #fff;
+
+        @include mediaMobileFirst(992) {
+          font-size: 16px;
+          line-height: 24px;
+        }
+
+        @include mediaMobileFirst(767) {
+          display: none;
+        }
+      }
+
+      &__link:hover {
+        color: $titleColor;
+        border-bottom: 2px solid $titleColor;
+      }
+    }
+  }
+}
+.burger-menu > div {
+  width: 30px;
+  height: 3px;
+  background-color: #000;
+}
+
+.burger-menu {
+  display: flex;
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+
+  @include mediaMobileFirst(767) {
+    display: flex;
+  }
+}
