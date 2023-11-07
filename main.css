@@ -189,6 +189,7 @@
   font-family: "Poppins-Regular";
   transition: 0.5s;
   border: 3px solid #263238;
+  cursor: pointer;
 }
 @media only screen and (max-width: 1212px) {
   .foreign .foreign-btn {
@@ -668,6 +669,7 @@
   border: 2px solid #263238;
   background-color: #263238;
   transition: 0.5s;
+  cursor: pointer;
 }
 .contact-elements .contact-box .main-btn:hover {
   background-color: #fff;
